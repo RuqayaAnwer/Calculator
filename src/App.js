@@ -27,13 +27,11 @@ function App() {
   }; 
  
   function divide(e) { 
-    // Add the code for the divide function 
      e.preventDefault(); 
     setResult((result) => result / Number(inputRef.current.value));
   };
  
   function resetInput(e) { 
-    // Add the code for the resetInput function 
     e.preventDefault();
     inputRef.current.value = 0;
 
@@ -41,7 +39,7 @@ function App() {
   }; 
  
   function resetResult(e) { 
-  	// Add the code for the resetResult function 
+  	
      e.preventDefault();
     setResult((prevVal) => prevVal * 0);
     
@@ -67,6 +65,7 @@ function App() {
         <button onClick={resetInput}>reset input</button>
         <button onClick={resetResult}>reset result</button>
       </form> 
+      
     </div> 
   ); 
 } 
